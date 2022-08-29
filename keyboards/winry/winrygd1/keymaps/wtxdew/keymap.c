@@ -1,11 +1,14 @@
 #include "winrygd1.h"
 
-#define _DJMAX    0  // QUERTY layer
-#define _LAYER2   1  // Lower layer
-#define _LAYER3   2  // Raise layer
+#define _DJMAX    0  // Default layer
+#define _LAYER2   1  // offical layer
+#define _LAYER3   2  // layer
+#define _TOOL     5  // Tools layer
+#define _HINT     6  // FUNC layer
+#define _ROOT     7  // Root layer
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [0] = LAYOUT( // DJMAX
+  [0] = LAYOUT( 
     KC_ESC,  KC_LSFT,                                     KC_RSFT, KC_F10,  
 		KC_TAB,  KC_A,    KC_S,    KC_D,    KC_L,    KC_SCLN, KC_QUOT, KC_ENT, 
 		TG(1),   KC_F4,   KC_F9,   KC_C,    KC_COMM, KC_DEL,  KC_UP,   MO(6), 
@@ -53,3 +56,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS)
 };
+
+
+
